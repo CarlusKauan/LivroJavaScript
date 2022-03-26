@@ -7,10 +7,11 @@ function promocao() {
     var outEntrada = document.getElementById("outEntrada")
     var outParcela = document.getElementById("outParcelas")
     
-    // processo de fazer a entrada, preço / 50 = 50%
-    var entrada = preco * 0.50;
-    // parcelas, divisão de preço / 12;
-    var parcelas = preco / 12;
+    // processo de fazer a entrada, 'preço / 50 = 50%'
+    var entrada = Number(preco) * 0.50;
+
+    // parcelas, divisão de '( preço / 50% ) / 12'
+    var parcelas = ( Number(preco) * 0.50 ) / 12;
 
     // processo das saídas
     outModelo.textContent = "Promoção: " + modelo;
