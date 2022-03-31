@@ -1,0 +1,32 @@
+*{
+    margin: 8px;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+
+.title{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.titlestyle{
+    color: red;
+    font-style: italic;
+}
+
+#outName{
+    text-align: center;
+    font-size: 2rem;
+}
+
+#btnName{
+    font-size: 2rem;
+    border: none;
+}
