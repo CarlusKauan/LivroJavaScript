@@ -8,6 +8,12 @@ function calcular(){
 
     var resposta = ""
 
+    if(numero == 0 || isNaN(numero)){
+        alert("Informe um valor valido !")
+        $outNumero.focus()
+        return;
+    }
+
     for(var i = 1; i <= 10; i++){
        var resposta  = resposta + numero + " x " + i + " = " + numero * i + "\n";
         // $outResposta.textContent = numero + " x " + i + " = " + numero * i + "\n";

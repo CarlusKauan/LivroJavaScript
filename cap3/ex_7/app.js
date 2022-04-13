@@ -13,5 +13,5 @@ function verificar(){
     }
 }
 
-var btCalcular = document.getElementById("btCalcular")
+const btCalcular = document.getElementById("btCalcular")
 btCalcular.addEventListener('click', verificar)
