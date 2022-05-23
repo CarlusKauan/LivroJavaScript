@@ -15,4 +15,5 @@ JavaScript é uma linguagem de programação universal, multiplataforma e segue 
     <li>Capítulo 3 - Condições </li>
     <li>Capítulo 4 - Repetições </li>
     <li>Capítulo 5 - Vetores </li>
+    <li>Capítulo 6 - Strings e datas </li>
 </ul>
