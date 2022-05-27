@@ -1,37 +1,16 @@
-function montarDica () {
-    // cria referència aos elementos da página
-    var $inFruta = document.getElementById('inFruta')
-    var $outDica = document.getElementById('outDica')
+var $btnClick = document.getElementById('btnClick');
+
+const click = () => {
     
-    // obtém o valor do campo !
-    var fruta = $inFruta.value;
+    var name = prompt("Qual o seu nome ?");
 
-    if(fruta == " "){
-        alert("Informe a fruta...");
-        $inFruta.focus();
-        return;
+    while(true){ // criar Repetição;
+    var continua = prompt(`Continuar (S/N) ${name} ? `); // lè um entrada;
+
+    if(continua.toUpperCase() == "N"){ // converte em maiúscula;
+        break; // sai da Repetição;
     }
-
-    var resposta = fruta.CharAt(0);
-    var estrelas = "*";
-    var tam = fruta.length
-
-    for(var i = 1; i < tam; i++){
-        if(fruta.charAt(i) == fruta.charAt(0))
-        {
-            resposta += fruta.charAt(0);
-        }
-        else
-        {
-            resposta += "_";    
-        }
-        estrelas += "*";
-    }
-
-    $outDica.textContent = resposta;
-    $inFruta.value = estrelas;
 }
+};
 
-const $btMontar = document.getElementById('btMontar')
-$btMontar.addEventListener('click', montarDica())
-
+$btnClick.addEventListener('click', click);
